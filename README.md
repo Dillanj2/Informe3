@@ -67,7 +67,7 @@ El método de la corriente de malla utiliza dos términos especiales: lazo y mal
 
 El procedimiento lo puede observar entrando al siguiente enlace:
 
-<p><a href="https://github.com/Dillanj2/Informe2/blob/main/C%C3%B3digo%20Fuente/Procedimiento_de_Laboratorio_2.pdf">Procedimiento</a>
+<p><a href="https://github.com/Dillanj2/Informe3/blob/main/C%C3%B3digo%20fuente/Procedimiento_de_Laboratorio_3.pdf">Procedimiento</a>
 
 6. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
 
