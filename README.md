@@ -14,11 +14,14 @@ Especificos
 
 2. MARCO TEÓRICO 
 
-El análisis de mallas es un método bien organizado para resolver circuitos. Al igual que en cualquier análisis de circuito, tenemos que resolver un sistema de ecuaciones depediendo de las mallas que tengamos propiamente en el circuito. El método de la corriente de malla facilita el análisis, y produce un número relativamente pequeño de ecuaciones a resolver. 
+Uno de los metodos al momento de analizar circuitos es el Teorema de Superposición, al igual que hemos visto analisis de mallas y leyes de Kirchhoff. Este teorema nos dice que el voltaje o corriente a través de cualquier elemento de un circuito puede obtenerse sumando todos los voltajes o corrientes generados por cada fuente. La palabra superposición es una manera elegante de decir suma, por ejemplo si tenemos una resitencia R_3, estamos usando el principio de superposición cuando decimos que las corrientes de lazo, I_1 e I_2, se suman en la corriente existente en el resistor, I_{R_3}.
 
-El método de la corriente de malla se basa en la ley de voltaje de Kirchhoff visto anteriormente. 
-
-El método de la corriente de malla utiliza dos términos especiales: lazo y malla. Un lazo es cualquier trayectoria cerrada alrededor de un circuito mientras que una malla es una clase restringida de lazo; una malla es un lazo que no contiene otros lazos. En el método de la corriente de malla, usamos las mallas de un circuito para generar las ecuaciones LVK.
+<p align="center">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Ejemplo%20Teoria..png">
+</p>
+<p align="center">
+  Figura 2.1: Ejemplo del Teorema de Superposición.
+</p>
 
 3. DIAGRAMAS
 
