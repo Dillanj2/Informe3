@@ -93,13 +93,6 @@ McAllister, W. (S/F). El método de la corriente de malla. Khan Academy. Obtenid
 </p
 
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Corriente%202.jpeg">
-</p>
-<p align="center">
-  Figura 9.2: Medición de la corriente 2 en LTspice.
-</p
-
-<p align="center">
   <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20con%20V_1%20cero.jpeg">
 </p>
 <p align="center">
