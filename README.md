@@ -23,6 +23,8 @@ Uno de los metodos al momento de analizar circuitos es el Teorema de Superposici
   Figura 2.1: Ejemplo del Teorema de Superposición.
 </p>
 
+Las dos corrientes de lazo se superponen (se suman) para formar la corriente a través de R_3.
+
 3. DIAGRAMAS
 
 <p align="center">
@@ -79,8 +81,8 @@ El procedimiento lo puede observar entrando al siguiente enlace:
 
 7. CONCLUSIONES
 
-* El análisis de mallas nos permite, como cualquier análisis, hacer la resolución mas fácil al momento de trabajar con circuitos con numerosas mallas.
-* Para emplear este análisis debemos conocer la ley de voltaje de Kirchhoff, ya que esta se basa en aquella ley. 
+* El teorema de superposicion nos ayuda de gran manera en el analisis de circuitos, especialmente cuando queremos encontrar la corriente que se forma en un resistor. 
+* Al aplicar el teorema de superposición en conjunto con los temas aprendidos anteriormente, el análisis de circuitos se hace mas facil de operar. 
 
 8. BIBLIOGRAFÍA
 
