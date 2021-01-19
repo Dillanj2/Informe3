@@ -1,0 +1,300 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formato en Látex para la generación de material de estudio en la ESPE - DECE 
+% Documento generado en base a los formatos ejemplo otorgados por el Ing. Wilson Cerón
+% Por:
+% Dillan Aldás
+% Andres Jimenez
+% 
+% Last Update: 2020.04.25 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, 11pt]{article}
+%Paquetes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{everypage}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[left=3cm, right=2.75cm, top=4.5cm, bottom=4cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\usepackage{tikzpagenodes}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage[user,abspage]{zref}
+\usepackage{siunitx}
+\usepackage[square,numbers]{natbib}
+\usepackage[maxbibnames=99, sorting=none, backend=bibtex]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage{graphicx} 
+\usepackage{spanish}
+\usepackage{gensymb}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage{calc}
+%%Comandos y comandos nuevos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\slink}[2]{\hyperref[#1]{\underline{\smash{#2}}}} 
+\renewcommand{\baselinestretch}{1.35} 
+
+%% colores de los hyperlinks - 
+% (en Adobe Acrobat los links Sí salen subrayados, en este visor de pdf solo salen azules) 
+\hypersetup{%
+colorlinks=true, linkcolor=blue, urlcolor=blue,linkbordercolor=blue, citecolor=blue, urlbordercolor=blue, pdfborderstyle={/S/U/W 1}
+}
+\makeatletter
+\Hy@AtBeginDocument{%
+  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+}
+\makeatother
+%colores%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{rojo_oscuro}{rgb}{.85,.45,.45} 
+\definecolor{verde_oscuro}{rgb}{0,.5,.2} 
+% Formato de todo el documento %%%%%%%%%%%%%%%%%%%%%
+\AddEverypageHook{%
+\tikz[remember picture,overlay]{%
+% Páginas mayores a 2
+  \ifnum\value{page}>1%
+  % \ifnum\makeatletter\zref@extract{#1}{abspage}\makeatother>1%
+  % \ifnum\value{\zref{abspage}}>1%
+  % \ifnum\value{page}>1%
+    \filldraw[fill=rojo_oscuro, thick,  draw=verde_oscuro] (1,-1.6) rectangle (16,-1.3);
+    \filldraw[fill=rojo_oscuro, thick, draw=verde_oscuro] (1,-1.6-22.8) rectangle (16,-1.3-22.8);
+        \node[anchor=east] at (16,-25) {\textcolor{black}{{\footnotesize DECE - ESPE}}};
+        \node[anchor=west] at (1,-25) {\textcolor{black}{{\footnotesize \thepage}}};
+  %logo DECE
+        \node at (1.8,0) {\includegraphics[width=2.5cm]{DEEE_LOGO.png}};
+%Pagina 1: Carátula%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \else
+    % Márgenes
+    \filldraw[fill=rojo_oscuro, thick, draw=verde_oscuro] (-0.3,0) rectangle (0.3,-26); %izquierdo
+    \filldraw[fill=rojo_oscuro, thick,  draw=verde_oscuro] (1,-1.6) rectangle (16,-1.3); %arriba
+    \filldraw[fill=rojo_oscuro, thick, draw=verde_oscuro] (1,-1.6-21.8) rectangle (16,-1.3-21.8); %abajo
+    % Texto de carátula
+    \node[anchor=east] at (16,-24) {\textcolor{black}{{\Large Laboratorio de Circuitos eléctricos}}}; 
+    \node[anchor=east] at (16,-25) {\textcolor{black}{{\small Procedimiento}}};
+    \node[anchor=east] at (16,-25.8) {\textcolor{black}{{\footnotesize 2021}}};
+    \node[anchor=east] at (16,-21) {\textcolor{black}{{\Huge Laboratorio 3}}};
+    \node[anchor=east] at (16,-22) {\textcolor{black}{{\LARGE Teorema de Superposición}}};
+    %Logos
+    \node at (4.2,0.) {\includegraphics[width=6cm]{ESPE_LOGO.png}};
+    \node at (14,0.) {\includegraphics[width=2.5cm]{DEEE_LOGO.png}};
+ \fi}
+ }
+%
+%
+%
+%
+% \pagenumbering{roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\zlabel{iniciodedocumento}
+\textbf{}
+\newpage
+
+\begin{flushright}
+\textbf{\Huge Contenido}
+\end{flushright}
+
+\renewcommand*\contentsname{}
+{% color de hyperlinks negro para el índice
+\hypersetup{linkcolor=black, urlcolor=black,linkbordercolor=black, urlbordercolor=black, pdfborderstyle={/S/U/W 0.5}}
+\tableofcontents
+}
+
+
+
+\newpage
+%\pagenumbering{arabic} % empieza la numeración de página
+
+\section{Procedimiento}
+
+Cuando $V_{20}=0$
+
+Malla 1
+
+\begin{equation*}
+12-470(I_1-I_2)=0
+\end{equation*}
+\begin{equation*}
+12-470I_1+470I_2=0
+\end{equation*}
+\begin{equation*}
+470I_1-470I_2=12
+\end{equation*}
+
+Malla 2
+
+\begin{equation*}
+-820I_2-2200(I_2-I_3)-470(I_2-I_1)=0 
+\end{equation*}
+\begin{equation*}
+-820I_2-2200I_2+2200I_3-470I_2+470I_1=0 
+\end{equation*}
+\begin{equation*}
+-3490I_2+2200I_3+470I_1=0
+\end{equation*}
+
+Malla 3
+
+\begin{equation*}
+-1000I_3-2200(I_3-I_2)=0 
+\end{equation*}
+\begin{equation*}
+-1000I_3-2200I_3+2200I_2=0
+\end{equation*}
+\begin{equation*}
+-3200I_3+2200I_2=0
+\end{equation*}
+
+Sistema de Ecuaciones con (1),  (2) y (3)
+
+\begin{equation*}
+470I_1-470I_2=12 \\
+(1)
+\end{equation*}
+\begin{equation*}
+-3490I_2+2200I_3+470I_1=0 \\
+(2)
+\end{equation*}
+\begin{equation*}
+-3200I_3+2200I_2=0 \\
+(3)
+\end{equation*}
+
+Resolviendo:
+
+\begin{equation*}
+I_1=33.5 mA
+\end{equation*} 
+\begin{equation*}
+I_2=7.96 mA
+\end{equation*}
+\begin{equation*}
+I_3=5.47 mA
+\end{equation*}
+\begin{equation*}
+I_x=I_1-I_2
+\end{equation*}
+\begin{equation*}
+I_x=33.5-7.96
+\end{equation*}
+\begin{equation*}
+I_x=25.54 mA
+\end{equation*}
+\begin{equation*}
+V_a=I_2*820
+\end{equation*}
+\begin{equation*}
+V_a=7.96*820
+\end{equation*}
+\begin{equation*}
+V_a=6.52 V
+\end{equation*}
+
+Cuando $V_{12}=0$
+
+Malla 1
+
+\begin{equation*}
+20-1000I_1-2200(I_1-I_2)=0
+\end{equation*}
+\begin{equation*}
+20-1000I_1-2200I_1+2200I_2=0
+\end{equation*}
+\begin{equation*}
+-3200I_1+2200I_2=20
+\end{equation*}
+
+Malla 2
+
+\begin{equation*}
+-820I_2-2200(I_2-I_1)-470(I_2-I_3)=0 
+\end{equation*}
+\begin{equation*}
+-820I_2-2200I_2+2200I_1-470I_2+470I_3=0 
+\end{equation*}
+\begin{equation*}
+-3490I_2+2200I_1+470I_3=0
+\end{equation*}
+
+Malla 3
+
+\begin{equation*}
+-470(I_3-I_2)=0 
+\end{equation*}
+\begin{equation*}
+-470I_3+470I_2=0
+\end{equation*}
+
+Sistema de Ecuaciones con (1),  (2) y (3)
+
+\begin{equation*}
+-3200I_1+2200I_2=20 \\
+(1)
+\end{equation*}
+\begin{equation*}
+-3490I_2+2200I_1+470I_3=0 \\
+(2)
+\end{equation*}
+\begin{equation*}
+-470I_3+470I_2=0 \\
+(3)
+\end{equation*}
+
+Resolviendo:
+
+\begin{equation*}
+I_1=-12.52 mA
+\end{equation*} 
+\begin{equation*}
+I_2=-9.12 mA
+\end{equation*}
+\begin{equation*}
+I_3=9.12 mA
+\end{equation*}
+\begin{equation*}
+I_x=I_3-I_2
+\end{equation*}
+\begin{equation*}
+I_x=-9.12+9.12
+\end{equation*}
+\begin{equation*}
+I_x=0 mA
+\end{equation*}
+\begin{equation*}
+V_a=I_2*820
+\end{equation*}
+\begin{equation*}
+V_a=-9.12*820
+\end{equation*}
+\begin{equation*}
+V_a=-7.47 V
+\end{equation*}
+
+Aplicamos el Teorema de Superposición
+
+\begin{equation*}
+I_{x_{total}}=25.54+0 
+\end{equation*}
+\begin{equation*}
+I_{x_{total}}=25.54 mA
+\end{equation*}
+\begin{equation*}
+V_{a_{total}}=6.52-7.47
+\end{equation*}
+\begin{equation*}
+V_{a_{total}}=-0.95 V
+\end{equation*}
+
+Para poder calcular el error debemos aplicar la siguiente formula:
+
+\begin{equation*}
+Error=\frac{v_{teorico}-v_{medido}}{v_{teorico}}100\verb+%+
+\end{equation*}
+
+\end{document}
