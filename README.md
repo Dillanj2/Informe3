@@ -1,16 +1,16 @@
-# ANÁLISIS DE MALLAS
+# TEOREMA DE SUPERPOSICIÓN
 
 1. OBJETIVOS
 
 Generales
 
-* Analizar el circuito  y justificar el uso de la teoría del análisis de mallas para los diferentes cálculos. 
+* Analizar el circuito  y justificar el uso de la teoría del teorema de superposición para los diferentes cálculos. 
 
 Especificos
 
-* Demostrar la funcionalidad del análisis de mallas y revisar los valores medidos con los valores teóricos mediante el uso de simuladores. 
+* Demostrar la funcionalidad del teorema de superposición y revisar los valores medidos con los valores teóricos mediante el uso de simuladores. 
 * Explicar los datos obtenidos en las tablas, mediante las formulas establecidas.
-* Practicar la resolucion de ejercicios usando el análisis de mallas.
+* Practicar la resolucion de ejercicios usando el teorema de superposición.
 
 2. MARCO TEÓRICO 
 
@@ -23,52 +23,47 @@ El método de la corriente de malla utiliza dos términos especiales: lazo y mal
 3. DIAGRAMAS
 
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Circuito%20para%20el%20an%C3%A1lisis%20de%20mallas.png">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20para%20comprobar%20el%20Teorema%20de%20Superposici%C3%B3n.png">
 </p>
 <p align="center">
-  Diagrama 3.1: Circuito para el análisis de mallas
+  Diagrama 3.1: Circuito para comprobar el Teorema de Superposición.
 </p>
 
 4. LISTA DE COMPONENTES
 
-* 1 Fuente de Voltaje de C.D.
-* 1 Multimetros Digitales.
-* 1 Resistor de 820Ω
-* 1 Resistor de 390Ω
+* 2 Fuente de Voltaje de C.D.
+* 2 Multimetros Digitales.
 * 1 Resistor de 1kΩ
-* 1 Resistor de 1.2kΩ
 * 1 Resistor de 2.2kΩ
+* 1 Resistor de 820Ω
+* 1 Resistor de 470Ω
 * 1 Protoboard
 
 5. PROCEDIMIENTO
 
-5.1 Implemente el circuito que se representa en el diagrama 3.1.
+5.1 Arme el circuito que se muestra en el diagrama 3.1.
 
-5.2 Mida cada una de las corrientes de malla y anote los resultados en la tabla 5.1.
+5.2 Con las dos fuentes conectadas, mida el voltaje V_A y la corriente I_x, respetando tanto la polaridad del voltaje como el sentido de la corriente que se proporcionan. Anote el valor de las mediciones en la tabla 5.1 y 5.2 respectivamente.
 
-5.3 Simule en el software Multisim, Proteus, o cualquier otro simulador, el circuito del diagram 3.1, obteniendo los valores de las corrientes de malla. Anote los resultados en la tabla 5.1.
+5.3 Haga "cero" la fuente de voltaje de 12 V (V_2) y mida el voltaje V_A y la corriente I_x, respetando tanto la polaridad del voltaje como el sentido de la corriente que se proporcionan. Anote el valor de las mediciones en la tabla 5.1 y 5.2 respectivamente.
 
-Usamos el software LTspice para la simulacion del circuito.
-
-El instalador se puede obtener en el siguiente enlace:
-
-<p><a href="https://github.com/Dillanj2/Informe2/blob/main/Instaladores/LTspice">Instalador LTspice</a>
-
-5.4 Compare los valores del diagrama 3.1 y realice sus conclusiones.
+5.4 Haga "cero" la fuente de voltaje de 20 V (V_1) y mida el voltaje V_A y la corriente I_x, respetando tanto la polaridad del voltaje como el sentido de la corriente que se proporcionan. Anote el valor de las mediciones en la tabla 5.1 y 5.2 respectivamente.
 
 <p align="center">
-  Tabla 5.1: Resultados obtenidos para el circuito del diagrama 3.1.
+  Tabla 5.1: Medición de voltaje aplicando superposición.
 </p>
 <p align="center">
   <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Resultados%20obtenidos%20para%20el%20circuito%20del%20diagrama%203.1.png">
 </p>
 
 <p align="center">
-  Tabla 5.2: Tabla de errores.
+  Tabla 5.2: Medición de corriente aplicando superposición.
 </p>
 <p align="center">
   <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Tabla%20de%20errores.png">
 </p>
+
+5.5 Verifique el cumplimiento del Teorema de Superposición y compare los resultados obtrenidos prácticamente con los obtenidos analíticamente. Realice sus conclusiones.
 
 El procedimiento lo puede observar entrando al siguiente enlace:
 
@@ -83,6 +78,7 @@ El procedimiento lo puede observar entrando al siguiente enlace:
 
 * El análisis de mallas nos permite, como cualquier análisis, hacer la resolución mas fácil al momento de trabajar con circuitos con numerosas mallas.
 * Para emplear este análisis debemos conocer la ley de voltaje de Kirchhoff, ya que esta se basa en aquella ley. 
+
 8. BIBLIOGRAFÍA
 
 McAllister, W. (S/F). El método de la corriente de malla. Khan Academy. Obtenido de: https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-dc-circuit-analysis/a/ee-mesh-current-method
