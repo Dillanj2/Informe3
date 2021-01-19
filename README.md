@@ -91,7 +91,7 @@ McAllister, W. (S/F). El método de la corriente de malla. Khan Academy. Obtenid
 9. ANEXOS
 
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20en%20Tinkercad.jpeg">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20en%20TINKERCAD.jpeg">
 </p>
 <p align="center">
   Figura 9.1: Circuito en Tinkercad.
