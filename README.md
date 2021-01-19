@@ -53,14 +53,14 @@ El método de la corriente de malla utiliza dos términos especiales: lazo y mal
   Tabla 5.1: Medición de voltaje aplicando superposición.
 </p>
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Resultados%20obtenidos%20para%20el%20circuito%20del%20diagrama%203.1.png">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Medici%C3%B3n%20de%20voltaje%20aplicando%20superposici%C3%B3n.png">
 </p>
 
 <p align="center">
   Tabla 5.2: Medición de corriente aplicando superposición.
 </p>
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Tabla%20de%20errores.png">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Medici%C3%B3n%20de%20corriente%20aplicando%20superposici%C3%B3n.png">
 </p>
 
 5.5 Verifique el cumplimiento del Teorema de Superposición y compare los resultados obtrenidos prácticamente con los obtenidos analíticamente. Realice sus conclusiones.
@@ -86,10 +86,10 @@ McAllister, W. (S/F). El método de la corriente de malla. Khan Academy. Obtenid
 9. ANEXOS
 
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Corriente%201.jpeg">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20en%20LTspice.jpeg">
 </p>
 <p align="center">
-  Figura 9.1: Medición de la corriente 1 en LTspice.
+  Figura 9.1: Circuito en LTspice.
 </p
 
 <p align="center">
@@ -100,23 +100,17 @@ McAllister, W. (S/F). El método de la corriente de malla. Khan Academy. Obtenid
 </p
 
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Corriente%203.jpeg">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20con%20V_1%20cero.jpeg">
 </p>
 <p align="center">
-  Figura 9.3: Medición de la corriente 3 en LTspice.
+  Figura 9.3: Circuito con V_12 cero.
 </p
   
 <p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Circuito%20para%20el%20an%C3%A1lisis%20de%20mallas%20Tinkercad.png">
+  <img src="https://github.com/Dillanj2/Informe3/blob/main/Im%C3%A1genes/Circuito%20con%20V_2%20cero.jpeg">
 </p>
 <p align="center">
-  Figura 9.4: Circuito para el análisis de mallas en Tinkercad
+  Figura 9.4: Circuito con V_20 cero.
 </p
 
-<p align="center">
-  <img src="https://github.com/Dillanj2/Informe2/blob/main/Im%C3%A1genes/Circuito%20para%20el%20an%C3%A1lisis%20de%20mallas%20medici%C3%B3n.png">
-</p>
-<p align="center">
-  Figura 9.5: Medición de corrientes en Tinkercad.
-</p
 
